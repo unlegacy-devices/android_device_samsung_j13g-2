@@ -57,13 +57,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.com.google.networklocation=1
 
 # Dalvik heap config
-$(call inherit-product, frameworks/native/build/phone-hdpi-2048-dalvik-heap.mk)
+$(call inherit-product, frameworks/native/build/phone-hdpi-512-dalvik-heap.mk)
 
 # Use prebuilt webviewchromium
 $(call inherit-product, $(LOCAL_PATH)/prebuilt/chromium/chromium_prebuilt.mk)
 
-# we have enough storage space to hold precise GC data
-PRODUCT_TAGS += dalvik.gc.type-precise
+# ART device props
+PRODUCT_PROPERTY_OVERRIDES += \
+	dalvik.vm.dex2oat-Xms=8m \
+	dalvik.vm.dex2oat-Xmx=96m \
+	dalvik.vm.dex2oat-flags=--no-watch-dog \
 
 # For userdebug builds
 ADDITIONAL_DEFAULT_PROPERTIES += \
