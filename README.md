@@ -33,6 +33,7 @@ Backlight dont works, but Touchscreen does
 - [x] Torch
 
 #### Not Working /Bugs ####
+ * Offline Charge
  * Camera (recording only works in qcfi mode)
  * Audio : earphone jack dont works, call go in speaker mode, loud audio
  * and other not discovered yet.
