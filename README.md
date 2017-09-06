@@ -28,7 +28,7 @@ Backlight dont works, but Touchscreen does
 - [x] Wifi
 - [x] Bluethooth
 - [x] Tether (Hotspot and USB)
-- [x] Camera (Only photos, see not working for more)
+- [x] Camera
 - [x] Zram
 - [x] Torch
 
