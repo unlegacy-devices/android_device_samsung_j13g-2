@@ -34,7 +34,7 @@ bin/macloader
 # Bluetooth
 lib/libbt-hci.so
 vendor/lib/libbt-vendor.so
-vendor/firmware/BCM4343A0_001.001.034.0056.0197_M_ORC_Core3.hcd
+vendor/firmware/BCM43430A1_001.002.009.0018.0033_ORC.hcd
 
 # RIL
 bin/rild
