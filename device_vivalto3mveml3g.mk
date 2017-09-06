@@ -113,7 +113,6 @@ PERMISSION_XML_FILES := \
 	$(LOCAL_PATH)/permissions/platform.xml \
 	$(LOCAL_PATH)/permissions/handheld_core_hardware.xml \
 	frameworks/native/data/etc/android.hardware.camera.flash-autofocus.xml \
-	frameworks/native/data/etc/android.hardware.camera.front.xml \
 	frameworks/native/data/etc/android.hardware.camera.xml \
 	frameworks/native/data/etc/android.hardware.bluetooth.xml \
 	frameworks/native/data/etc/android.hardware.location.gps.xml \
