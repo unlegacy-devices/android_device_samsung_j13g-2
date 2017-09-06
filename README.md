@@ -1,3 +1,4 @@
+
 # Samsung Galaxy Ace 4 Neo/Lite aka vivalto3mveml3g #
 - - - -
 Spec  | Value
@@ -32,7 +33,7 @@ Backlight dont works, but Touchscreen does
 - [x] Torch
 
 #### Not Working /Bugs ####
-Camera (recording only works in qcfi mode)
-Audio : earphone jack dont works, call go in speaker mode, loud audio
-and other not discovered yet.
+ * Camera (recording only works in qcfi mode)
+ * Audio : earphone jack dont works, call go in speaker mode, loud audio
+ * and other not discovered yet.
 - - - -
