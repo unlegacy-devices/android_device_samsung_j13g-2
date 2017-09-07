@@ -28,13 +28,12 @@ Backlight dont works, but Touchscreen does
 - [x] Wifi
 - [x] Bluethooth
 - [x] Tether (Hotspot and USB)
-- [x] Camera (Only photos, see not working for more)
+- [x] Camera
 - [x] Zram
 - [x] Torch
 
 #### Not Working /Bugs ####
  * Offline Charge
- * Camera (recording only works in qcfi mode)
  * Audio : earphone jack dont works, call go in speaker mode, loud audio
  * and other not discovered yet.
 - - - -
