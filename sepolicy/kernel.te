@@ -1,0 +1,5 @@
+allow kernel untrusted_app_tmpfs:file write;
+
+# Set checkreqprot by init.rc prior to switching to init domain.
+allow kernel selinuxfs:file write;
+allow kernel self:security setcheckreqprot;
