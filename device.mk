@@ -15,7 +15,7 @@
 # The gps config appropriate for this device
 $(call inherit-product, device/common/gps/gps_us_supl.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/vivalto3mveml3g/vivalto3mveml3g-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/j13g/j13g-vendor.mk)
 
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
@@ -77,7 +77,7 @@ ADDITIONAL_DEFAULT_PROPERTIES += \
 	persist.service.adb.enable=1
 
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_UTC_DATE=0
-PRODUCT_NAME := full_vivalto3mveml3g
-PRODUCT_DEVICE := vivalto3mveml3g
+PRODUCT_NAME := full_j13g
+PRODUCT_DEVICE := j13g
 PRODUCT_BRAND := samsung
-PRODUCT_MODEL := SM-G318ML
+PRODUCT_MODEL := SM-J100H

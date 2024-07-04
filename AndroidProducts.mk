@@ -18,4 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-	$(LOCAL_DIR)/device_vivalto3mveml3g.mk
+	$(LOCAL_DIR)/device_j13g.mk

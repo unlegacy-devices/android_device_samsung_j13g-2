@@ -13,7 +13,7 @@
 # limitations under the License.
 
 # Inherit from the proprietary version
--include vendor/samsung/vivalto3mveml3g/BoardConfigVendor.mk
+-include vendor/samsung/j13g/BoardConfigVendor.mk
 
 # Platform
 TARGET_ARCH := arm
@@ -41,14 +41,14 @@ TARGET_USERIMAGES_USE_EXT4 := true
 BOARD_HAS_LARGE_FILESYSTEM := true
 
 # RIL
-BOARD_RIL_CLASS := ../../../device/samsung/vivalto3mveml3g/ril
+BOARD_RIL_CLASS := ../../../device/samsung/j13g/ril
 COMMON_GLOBAL_CFLAGS += -DSEC_PRODUCT_FEATURE_RIL_CALL_DUALMODE_CDMAGSM
 
 # Bluetooth
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/vivalto3mveml3g/bluetooth
-BOARD_BLUEDROID_VENDOR_CONF := device/samsung/vivalto3mveml3g/bluetooth/libbt_vndcfg.txt
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/samsung/j13g/bluetooth
+BOARD_BLUEDROID_VENDOR_CONF := device/samsung/j13g/bluetooth/libbt_vndcfg.txt
 
 # Wifi
 BOARD_WLAN_DEVICE := bcmdhd
@@ -67,7 +67,7 @@ WIFI_BAND := 802_11_ABG
 BOARD_HAVE_SAMSUNG_WIFI := true
 
 # Hardware rendering
-BOARD_EGL_CFG := device/samsung/vivalto3mveml3g/configs/egl.cfg
+BOARD_EGL_CFG := device/samsung/j13g/configs/egl.cfg
 BOARD_USE_MHEAP_SCREENSHOT := true
 BOARD_EGL_WORKAROUND_BUG_10194508 := true
 TARGET_RUNNING_WITHOUT_SYNC_FRAMEWORK := true
@@ -89,9 +89,6 @@ BOARD_USES_SS_VOIP := true
 BOARD_USE_LIBATCHANNEL_WRAPPER := true
 
 # Board specific features
-#BOARD_USE_VETH := true
-#BOARD_SPRD_RIL := true
-#BOARD_SAMSUNG_RIL := true
 BOARD_USE_SAMSUNG_COLORFORMAT := true
 BOARD_NEEDS_MEMORYHEAPION_SPRD := true
 COMMON_GLOBAL_CFLAGS += -DSPRD_HARDWARE
@@ -103,8 +100,8 @@ BOARD_HAL_STATIC_LIBRARIES := libhealthd.sc8830
 BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_CMDLINE := console=ttyS1,115200n8 androidboot.selinux=permissive
 BOARD_KERNEL_PAGESIZE := 2048
-TARGET_KERNEL_CONFIG := cyanogen_vivalto3mveml3g_defconfig
-TARGET_KERNEL_SOURCE := kernel/samsung/vivalto3mveml3g
+TARGET_KERNEL_CONFIG := cyanogenmod_j13g_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/j13g
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt device/samsung/vivalto3mveml3g/dt.img
 
 # Init
@@ -114,10 +111,10 @@ TARGET_PROVIDES_INIT_RC := true
 # Recovery
 BOARD_HAS_DOWNLOAD_MODE := true
 TARGET_RECOVERY_PIXEL_FORMAT := "RGBX_8888"
-TARGET_RECOVERY_FSTAB := device/samsung/vivalto3mveml3g/ramdisk/recovery.fstab
+TARGET_RECOVERY_FSTAB := device/samsung/j13g/ramdisk/recovery.fstab
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := SM-G318ML,SM-G318H,vivalto3mveml3g,vivalto3mveml3gdd,vivalto3mveml3gdx
+TARGET_OTA_ASSERT_DEVICE := SM-J100H,J100H,sc7727s,j13g
 
 # Use prebuilt webviewchromium to cut down build time
 PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
@@ -126,4 +123,4 @@ PRODUCT_PREBUILT_WEBVIEWCHROMIUM := yes
 WITH_DEXPREOPT := true
 
 # CMHW
-BOARD_HARDWARE_CLASS := device/samsung/vivalto3mveml3g/cmhw/
+BOARD_HARDWARE_CLASS := device/samsung/j13g/cmhw/
